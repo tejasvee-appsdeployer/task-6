@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FormButton from "./components/FormButton";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,8 +13,8 @@ function App() {
 	const [data, setData] = useState(emp_data);
 	return (
 		<div className="App">
-			<FormButton data={data} setData={setData} />
 			<EmmployeeTable data={data} />
+			<FormButton data={data} setData={setData} />
 		</div>
 	);
 }
